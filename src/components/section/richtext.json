@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_section_richtexts",
+  "info": {
+    "displayName": "richtext",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "string"
+    },
+    "richtext_button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.button"
+    }
+  }
+}

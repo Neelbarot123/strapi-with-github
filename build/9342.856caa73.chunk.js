@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_project=self.webpackChunkmy_project||[]).push([[9342],{89342:(D,_,E)=>{E.r(_),E.d(_,{default:()=>P});var t=E(92132),O=E(21272),s=E(61560);const P=u=>(0,t.jsx)(s.A,{...u,multiple:!0})}}]);
