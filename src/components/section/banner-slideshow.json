@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_banner_slideshows",
+  "info": {
+    "displayName": "banner Slideshow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slideshow_tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.slideshow-images"
+    }
+  }
+}

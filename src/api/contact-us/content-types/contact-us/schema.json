@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "home_pages",
+  "collectionName": "contact_uses",
   "info": {
-    "singularName": "home-page",
-    "pluralName": "home-pages",
-    "displayName": "home-page",
+    "singularName": "contact-us",
+    "pluralName": "contact-uses",
+    "displayName": "contact-us",
     "description": ""
   },
   "options": {
@@ -18,8 +18,8 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "section.image-banner",
         "section.richtext",
+        "section.image-banner",
         "section.banner-slideshow"
       ]
     }

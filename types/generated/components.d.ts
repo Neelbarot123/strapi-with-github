@@ -20,9 +20,35 @@ export interface SectionImageBanner extends Schema.Component {
     description: '';
   };
   attributes: {
-    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    banner_image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Attribute.String;
     text: Attribute.Text;
+  };
+}
+
+export interface SectionBannerSlideshow extends Schema.Component {
+  collectionName: 'components_section_banner_slideshows';
+  info: {
+    displayName: 'banner Slideshow';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    slideshow_tabs: Attribute.Component<'blocks.slideshow-images', true>;
+  };
+}
+
+export interface BlocksSlideshowImages extends Schema.Component {
+  collectionName: 'components_blocks_slideshow_images';
+  info: {
+    displayName: 'slideshow_images';
+  };
+  attributes: {
+    slideshow_image: Attribute.Media<'images', true>;
+    slideshow_heading: Attribute.String;
+    slideshow_paragraph: Attribute.String;
+    slideshow_button_text: Attribute.String;
+    slideshow_button_url: Attribute.String;
   };
 }
 
@@ -50,6 +76,8 @@ declare module '@strapi/types' {
     export interface Components {
       'section.richtext': SectionRichtext;
       'section.image-banner': SectionImageBanner;
+      'section.banner-slideshow': SectionBannerSlideshow;
+      'blocks.slideshow-images': BlocksSlideshowImages;
       'blocks.richtext-button': BlocksRichtextButton;
       'blocks.button': BlocksButton;
     }

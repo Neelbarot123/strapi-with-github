@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blocks_slideshow_images",
+  "info": {
+    "displayName": "slideshow_images"
+  },
+  "options": {},
+  "attributes": {
+    "slideshow_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "slideshow_heading": {
+      "type": "string"
+    },
+    "slideshow_paragraph": {
+      "type": "string"
+    },
+    "slideshow_button_text": {
+      "type": "string"
+    },
+    "slideshow_button_url": {
+      "type": "string"
+    }
+  }
+}
